@@ -12,7 +12,7 @@
 		end = getRGB(color);
 
 		return this
-			.bind('mouseapproach mouseretreat', function(e) {
+			.bind('mouseapproach mouseretreat scroll', function(e) {
 				if(e.distanceR < options.in) {
 					this.style['backgroundColor'] = 'rgb(' + [end[0], end[1], end[2]].join(',') + ')';
 					return;
